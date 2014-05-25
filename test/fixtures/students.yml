@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  youth_group_id: 
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  dob: MyString
+  info: MyText
+
+two:
+  youth_group_id: 
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  dob: MyString
+  info: MyText
