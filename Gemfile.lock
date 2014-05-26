@@ -47,6 +47,7 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -58,6 +59,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
     formtastic (2.3.0.rc3)
@@ -89,6 +96,7 @@ GEM
     minitest (5.3.4)
     multi_json (1.10.1)
     mysql2 (0.3.16)
+    orm_adapter (0.5.0)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
@@ -153,6 +161,8 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -160,6 +170,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   coffee-rails (~> 4.0.0)
+  devise
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
