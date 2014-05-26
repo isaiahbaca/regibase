@@ -11,7 +11,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140525225949) do
+ActiveRecord::Schema.define(version: 20140526032545) do
+
+  create_table "churches", force: true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "email"
+    t.string   "pastor"
+    t.string   "phone"
+    t.string   "ag_code"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "events", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "address"
+    t.string   "date"
+    t.string   "time"
+    t.string   "cost"
+    t.string   "forms"
+    t.boolean  "active"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forms", force: true do |t|
+    t.string   "name"
+    t.string   "type"
+    t.string   "label"
+    t.boolean  "required"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "registrations", force: true do |t|
+    t.string   "name"
+    t.string   "event"
+    t.string   "student"
+    t.string   "cost"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "students", force: true do |t|
     t.integer  "youth_group_id"
