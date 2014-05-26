@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use mysql as the database for Active Record
+
+gem 'haml'
+
 gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -40,3 +43,5 @@ gem 'spring',        group: :development
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
+gem 'pry'
+gem 'json'

@@ -1,0 +1,5 @@
+%form
+  - @form_data.each do |element|
+    %label
+      #{element["label"]}
+    %input{type: element["type"], name: element["name"]}
